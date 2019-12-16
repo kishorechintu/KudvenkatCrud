@@ -12,6 +12,8 @@ import { NgforComponent } from './ngfor/ngfor.component';
 //import { NgforCardComponent } from './ngfor-card/ngfor-card.component';
 import { AmazonShoppingComponent } from './amazon-shopping/amazon-shopping.component';
 import { NgforcardComponent } from './ngforcard/ngforcard.component';
+import { IterationdemoComponent } from './iterationdemo/iterationdemo.component';
+import { Iterationdemo2Component } from './iterationdemo2/iterationdemo2.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { NgforcardComponent } from './ngforcard/ngforcard.component';
     NgforComponent,
     //NgforCardComponent,
     AmazonShoppingComponent,
-    NgforcardComponent
+    NgforcardComponent,
+    IterationdemoComponent,
+    Iterationdemo2Component
   
   ],
   imports: [
@@ -33,6 +37,6 @@ import { NgforcardComponent } from './ngforcard/ngforcard.component';
     FormsModule
   ],
   providers: [],
-  bootstrap: [NgforcardComponent]
+  bootstrap: [Iterationdemo2Component]
 })
 export class AppModule { }
