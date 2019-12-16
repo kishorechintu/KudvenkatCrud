@@ -1,0 +1,16 @@
+<div class="container">
+    <h2>Products Details</h2>
+    <ol>
+        <li *ngFor="let key of Product">{{key.categories}}
+            <ol type="a">
+                <li *ngFor="let value of key.products">
+                    {{value}}
+                </li>
+            </ol>
+
+        </li>
+
+
+    </ol>
+    
+</div>

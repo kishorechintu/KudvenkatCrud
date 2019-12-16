@@ -1,0 +1,29 @@
+<style>
+.adiv{
+    border : 2px solid darkcyan;
+}
+</style>
+<div class="container adiv">
+    <h2>Product Details</h2>
+    <div class="row">
+    <div class="col-8 adiv">
+        <dl>
+        <dt>Name</dt>
+        <dd>{{Product.Name}}</dd>
+        <dt>Price</dt>
+        <dd>{{Product.Price}}</dd>
+        <dt>
+            <button (click)="displayClick()" class="btn btn-primary">Preview -{{btnText}}</button>
+
+        </dt>
+    </dl>
+        </div>
+        <dl>
+        <dd>
+            <div *ngIf="isVisible" class="col adiv">
+                <img [src] = "Product.Photo" width="250" height="200" class="img-fluid">
+            </div>
+        </dd>
+        </dl>
+        </div>
+</div>

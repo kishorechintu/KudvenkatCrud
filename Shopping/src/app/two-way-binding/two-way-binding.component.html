@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .adiv{
+        border: 5px solid darkcyan;
+        margin: 10px;
+        padding :10px;
+      
+        
+    }
+    .bdiv{
+        border: 3px solid chartreuse;
+        margin: 2px;
+        margin-left: 10px;
+        padding :10px;
+       
+       
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col adiv">
+                    <dl>
+                            <dt>Name</dt>
+                            <dd><input type="text" [(ngModel)]="name" class="form-control"></dd>
+                            <dt>Price</dt>
+                            <dd><input type="text" [(ngModel)]="price" class="form-control"></dd>
+                            <dt>Qty</dt>
+                            <dd><input type="text" [(ngModel)]="qty" class="form-control"></dd>
+                            <dt>InStock</dt>
+                            <dd>
+                                <input type="radio" value="Available" name="stock" [(ngModel)]="isInStock" class="form-control">Yes
+                                <input type="radio" value="Out of Stock" name="stock" [(ngModel)]="isInStock" class="form-control">No
+                    
+                            </dd>
+                            <dt>Shipped To</dt>
+                            <dd>
+                                <select [(ngModel)]="shippedTo" class="form-control">
+                                    <option>Delhi</option>
+                                    <option>Hyd</option>
+                                    <option>Chennai</option>
+                                </select>
+                            </dd>
+                            </dl>
+                            <dt><button class="btn-primary">Submit</button></dt>
+        
+            </div>
+
+            <div class="col bdiv">
+                    <dl>
+                            <dt>Name</dt>
+                            <dd>{{name}}</dd>
+                            <dt>Price</dt>
+                            <dd> {{price}}</dd>
+                            <dt>Qty</dt>
+                            <dd>{{qty}}</dd>
+                            <dt>InStock</dt>
+                            <dd>{{isInStock}}</dd>
+                            <dt>Shipped To</dt>
+                            <dd>{{shippedTo}}</dd>
+                        </dl>
+                
+       
+            </div>
+        </div>
+    </div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+h2{
+    background-color: darkcyan;
+    color : white;
+    text-align: center;
+}
+input[type="email"]{
+    border : solid 2px darkcyan;
+}
+button {
+    background-color:darkcyan;
+    color : white;
+}
