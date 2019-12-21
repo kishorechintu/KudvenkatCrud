@@ -17,6 +17,7 @@ import { Iterationdemo2Component } from './iterationdemo2/iterationdemo2.compone
 import { ConditionalComponent } from './conditional/conditional.component';
 import { SidemenuComponent } from './sidemenu/sidemenu.component';
 import { SwitchdemoComponent } from './switchdemo/switchdemo.component';
+import { StylebindingComponent } from './stylebinding/stylebinding.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { SwitchdemoComponent } from './switchdemo/switchdemo.component';
     Iterationdemo2Component,
     ConditionalComponent,
     SidemenuComponent,
-    SwitchdemoComponent
+    SwitchdemoComponent,
+    StylebindingComponent
   
   ],
   imports: [
@@ -43,6 +45,6 @@ import { SwitchdemoComponent } from './switchdemo/switchdemo.component';
     FormsModule
   ],
   providers: [],
-  bootstrap: [SwitchdemoComponent]
+  bootstrap: [StylebindingComponent]
 })
 export class AppModule { }
