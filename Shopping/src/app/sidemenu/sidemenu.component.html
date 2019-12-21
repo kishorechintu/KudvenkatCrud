@@ -1,0 +1,166 @@
+<div class="sidenav">
+    <a href="#">Dashboard</a>
+    <a href="#">Edit Fund Details</a>
+    <a href="#">Print Fund Summary</a>
+    <a href="#">Addendums</a>
+    <a href="#">Partnership Agreements</a>
+    <a href="#">Side Letters</a>
+    <a href="#">Capital Call</a>
+</div>
+<div class="middleDiv">
+</div>
+
+<div class="dashboard">
+    <div class="row capital">
+        Capital Call
+    </div>
+
+    <div class="paragraph">
+        <p>view amount of capital closed LP's have contributed each closing or <br> make a new capital call for select
+            LP's
+        </p>
+    </div>
+    <div class="row">
+        <div class="container">
+            <button type="button" class="btn btn-info btn-lg" class="btn btn-info capitalButton" data-toggle="modal"
+                data-target="#myModal"><i class="fa fa-plus" aria-hidden="true"></i>+ New
+                Capital Call</button>
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content contactModel">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Add Contact</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                        </div>
+                        <div class="modal-body">
+                            <p>Fill in the form below to add a new contact to the sheet. Fields<br> marked with an *
+                                are
+                                requires</p>
+                            <div>
+                                <form>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <label class="control-label col-sm-5 marginRT" for="fName">First
+                                                Name*</label>
+                                            <label class="control-label col-sm-5 marginRT" for="lName">Last
+                                                Name*</label>
+
+                                        </div>
+                                        <div class="row">
+                                            <input type="text" class="form-control col-sm-5 marginRT" id="fName"
+                                                placeholder="Enter First Name" name="fName">
+                                            <input type="text" class="form-control col-sm-5 marginRT" id="lName"
+                                                placeholder="Enter Last Name" name="Lname">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <label class="control-label col-sm-5 marginRT" for="phone">Phone Number
+                                                (Main)*</label>
+                                            <label class="control-label col-sm-5 marginRT" for="email">Email
+                                                Address*</label>
+
+                                        </div>
+                                        <div class="row">
+
+                                            <button type="button" data-toggle="dropdown"
+                                                class="form-control col-sm-5 marginRT btn btn-default dropdown-toggle"
+                                                id="phone" name="phoneNumber"><span class="caret"></span></button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">666666</a></li>
+                                                <li><a href="#">77777</a></li>
+                                                <li><a href="#">888888</a></li>
+                                                <li class="divider"></li>
+                                                <li><a href="#">999999</a></li>
+                                            </ul>
+
+                                            <input type="email" class="form-control col-sm-5 marginRT" id="email"
+                                                placeholder="Enter email" name="email">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <label class="control-label col-sm-5 marginRT" for="Address">Street
+                                                Address*</label>
+                                            <label class="control-label col-sm-5 marginRT" for="anotherAddress">Apt
+                                                #,Suite,Space,Etc.
+                                                (Optional)</label>
+
+                                        </div>
+                                        <div class="row">
+                                            <input type="text" class="form-control col-sm-5 marginRT" id="Address"
+                                                placeholder="Enter Address" name="Address">
+                                            <input type="text" class="form-control col-sm-5 marginRT"
+                                                id="optionalAddress" placeholder="Enter Optional Address"
+                                                name="oAddress">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <label class="control-label col-sm-4" for="Address">City*</label>
+                                            <label class="control-label col-sm-3" for="anotherAddress">State*</label>
+                                            <label class="control-label col-sm-2" for="anotherAddress">Zipcode*</label>
+
+                                        </div>
+                                        <div class="row">
+                                            <input type="text" class="form-control col-sm-3 cityT" id="City"
+                                                placeholder="Enter City" name="city">
+                                            <button type="button" data-toggle="dropdown"
+                                                class="form-control col-sm-3 marginRT btn btn-default dropdown-toggle Rbutton stateT"
+                                                id="State" name="State"><span class="caret"></span>CA</button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">Ap</a></li>
+                                                <li><a href="#">Telangana</a></li>
+                                                <li><a href="#">Goa</a></li>
+                                                <li class="divider"></li>
+                                                <li><a href="#">Delhi</a></li>
+                                            </ul>
+                                            <input type="text" class="form-control col-sm-4 zipcodeT" id="zip code"
+                                                placeholder="Enter Zip Code" name="zipCode">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <label class="control-label col-sm-5 marginRT" for="Role">Role*</label>
+                                        </div>
+                                        <div class="row">
+
+                                            <button type="button" data-toggle="dropdown"
+                                                class="form-control col-sm-3 marginRT btn btn-default dropdown-toggle Rbutton"
+                                                id="role" name="role"><span class="caret"></span>Role
+                                                Name</button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">Developer</a></li>
+                                                <li><a href="#">Admin</a></li>
+                                                <li><a href="#">Asst manager</a></li>
+                                                <li class="divider"></li>
+                                                <li><a href="#">Manager</a></li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row">
+                                        <button type="button" class="btn btn-danger col-sm-4">cancel</button>
+                                        <button type="button" class="btn btn-info btn-lg col-sm-4 btn btn-info saveB"
+                                            data-toggle="modal" data-target="#myModal">save</button>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default " data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>

@@ -14,6 +14,9 @@ import { AmazonShoppingComponent } from './amazon-shopping/amazon-shopping.compo
 import { NgforcardComponent } from './ngforcard/ngforcard.component';
 import { IterationdemoComponent } from './iterationdemo/iterationdemo.component';
 import { Iterationdemo2Component } from './iterationdemo2/iterationdemo2.component';
+import { ConditionalComponent } from './conditional/conditional.component';
+import { SidemenuComponent } from './sidemenu/sidemenu.component';
+import { SwitchdemoComponent } from './switchdemo/switchdemo.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +32,10 @@ import { Iterationdemo2Component } from './iterationdemo2/iterationdemo2.compone
     AmazonShoppingComponent,
     NgforcardComponent,
     IterationdemoComponent,
-    Iterationdemo2Component
+    Iterationdemo2Component,
+    ConditionalComponent,
+    SidemenuComponent,
+    SwitchdemoComponent
   
   ],
   imports: [
@@ -37,6 +43,6 @@ import { Iterationdemo2Component } from './iterationdemo2/iterationdemo2.compone
     FormsModule
   ],
   providers: [],
-  bootstrap: [Iterationdemo2Component]
+  bootstrap: [SwitchdemoComponent]
 })
 export class AppModule { }

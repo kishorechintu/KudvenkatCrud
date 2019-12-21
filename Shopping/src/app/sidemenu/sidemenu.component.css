@@ -1,0 +1,79 @@
+.sidenav {
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav :hover {
+      color: #00bcd4
+  }
+  .dashboard{
+      width:75%;
+      float:right;
+  }
+  
+  .row{
+      margin:0px !important;
+  }
+  
+  .capital{
+      font-size:24px;
+      padding-bottom: 10px;
+      padding-top: 60px;
+      padding-left: 40px;
+      border-bottom:1px solid black;
+      
+  }
+  .middleDiv{
+      width:5%;
+  }
+   .paragraph{
+      padding-top: 2px;
+      padding-left: 15px;
+   }
+   .capitalButton{
+       padding-right: 20px;
+       padding-left: 30px;
+       border-radius: 20px;
+       /* color: #00bcd4 */
+   }
+   .contactModel{
+       width: 150%;
+       height: 700px;
+   }
+   .marginRT{
+       padding: 0%;
+       margin-right: 50px;
+       border-color: black;
+   }
+   .saveB{
+       margin-left: 100px;
+       border-radius: 20px;
+   }
+   .stateT{
+       margin-right: 35px;
+   }
+   .cityT{
+       margin-right: 15px;
+       border-color: black;
+   }
+   .zipcodeT{
+       margin-right: 50px;
+       border-color: black;
+   }
+   
