@@ -18,6 +18,7 @@ import { ConditionalComponent } from './conditional/conditional.component';
 import { SidemenuComponent } from './sidemenu/sidemenu.component';
 import { SwitchdemoComponent } from './switchdemo/switchdemo.component';
 import { StylebindingComponent } from './stylebinding/stylebinding.component';
+import { ShoppingcartNewComponent } from './shoppingcart-new/shoppingcart-new.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { StylebindingComponent } from './stylebinding/stylebinding.component';
     ConditionalComponent,
     SidemenuComponent,
     SwitchdemoComponent,
-    StylebindingComponent
+    StylebindingComponent,
+    ShoppingcartNewComponent
   
   ],
   imports: [
@@ -45,6 +47,6 @@ import { StylebindingComponent } from './stylebinding/stylebinding.component';
     FormsModule
   ],
   providers: [],
-  bootstrap: [StylebindingComponent]
+  bootstrap: [ShoppingcartNewComponent]
 })
 export class AppModule { }

@@ -6,16 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./stylebinding.component.css']
 })
 export class StylebindingComponent  {
-public styleObject;
-public forecolor='black';
-public alignment='left';
 
- public applyEffects(){
-this.styleObject={
-  'color':this.forecolor, 'text-align' :this.alignment
-}
-return this.styleObject;
+  public styleObject;
+  public forecolor='black';
+  public alignment='left'
 
- }
- 
+  public applyEffects(){
+
+    this.styleObject={
+      'color':this.forecolor , 'text-align':this.alignment
+    }
+    return this.styleObject;
+  }
+
 }

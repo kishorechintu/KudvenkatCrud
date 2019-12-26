@@ -9,25 +9,24 @@
 <body>
     <div class="container">
         <div class="form-group">
-            <h3>Select Color</h3>
+            <h3>Selec Color</h3>
+            <select [(ngModel)]="forecolor" class="form-control" >
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+            </select>
+            <dl>
+              <dt>Alignment</dt>
+              <dd>
+                        <input type="radio" name="align" value="left" [(ngModel)]="alignment">Left
+                    
+                  
+                        <input type="radio" name="align" value="center" [(ngModel)]="alignment">Center
+                        <input type="radio" name="align"  value="right" [(ngModel)]="alignment">Right
+              </dd>
+            </dl>
+            <h3 [ngStyle]="applyEffects()">Some Sample Test</h3>
         </div>
-        <select class="form-control" [(ngModel)]="forecolor">
-            <option value='red'>Red</option>
-            <option value='green'>Green</option>
-            <option value='blue'>Blue</option>
-
-        </select>
-        
-
-        <dl>
-            <dt>Alignment</dt>
-            <dd>
-                <input type="radio" name="align" value="left" [(ngModel)]="alignment">Left
-                <input type="radio" name="align" value="center" [(ngModel)]="alignment">center
-                <input type="radio" name="align" value="right" [(ngModel)]="alignment">Right
-            </dd>
-        </dl>
-        <h4 [ngStyle]="applyEffects()">Some Sample Text</h4>
     </div>
 </body>
 </html>

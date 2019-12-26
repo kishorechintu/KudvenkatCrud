@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .cart{
+            position: fixed;
+            right: 65px;
+            top :22px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="bg-primary text-white">
+            <h2 class="text-center mt-4 pb-2">Amazon Shopping</h2>
+           
+            
+        </div>
+        <div (click)="showCart()" class="btn">
+            <img class="cart" src = "assets/cart.png" width="40" height="40">
+            <span class="cart" style="color:red; right: 45px; top:25px; font-weight: bold;font-size:15px" >{{cartItems.length}}</span>
+        </div>
+        <br>
+        <div class="form-group">
+            <label>Select Category</label>
+            <select (change)="categoryChanged()" [(ngModel)]="category" class="form-control">
+                <option *ngFor="let product of categories">
+                    {{product}}
+                </option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label> Select Product</label> 
+            <select (change)="productCard()" [(ngModel)]="selectedProduct" class="form-control"> 
+                <option *ngFor="let product of selectedCategory">
+                    {{product}}
+                </option>
+
+            </select>
+        </div>
+        <div class="form-group">
+            <div class="card text-center" >
+                <div class="card-header">
+                    <h4>{{name}}</h4>
+                </div>
+                <div class="card-body">
+                    <img [src]="photo" class="img-thumbnail" width="200" height="200"/>
+                </div>
+                <div class="card-footer">
+                    {{price}}
+                </div>
+                
+                    <button (click)="addtoCart()" class="btn  btn-primary">Add to Cart</button>
+               
+            </div>
+        </div>
+        <br>
+        
+        <div class="form-group" *ngIf="isVisible">
+            <h3 class="text-primary">Cart Items</h3>
+            <table class="table table-hover">
+                <thead class="thead-dark">
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Photo</th>
+                    <th>Qty</th>
+                    <th>Action</th>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let product of cartItems;let i=index">
+                        <td>{{product.Name}}</td>
+                        <td>{{product.Price}}</td>
+                        <td>
+                            <img [src]="product.Photo" class="img-thumbnail" width="100" height="70"/>
+                        </td>
+                        <td>{{product.Qty}}</td>
+                        <td>
+                            <button (click)="deleteCart(i)" class="btn btn-danger">Delete</button>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td colspan="5" style="text-align: right; margin-right: 40px;">Total : {{total}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
