@@ -33,6 +33,7 @@ import { CaptchaService } from './captcha.service';
 import { ProductdataService } from './productdata.service';
 
 import { PipeDemoComponent } from './pipe-demo/pipe-demo.component';
+import { SentenseCase } from './sentensecase.pipe';
 
 
 
@@ -68,7 +69,8 @@ import { PipeDemoComponent } from './pipe-demo/pipe-demo.component';
     
     ServiceLoginComponent,
     
-    PipeDemoComponent
+    PipeDemoComponent,
+    SentenseCase
   
   ],
   imports: [
