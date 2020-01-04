@@ -20,6 +20,22 @@ import { SwitchdemoComponent } from './switchdemo/switchdemo.component';
 import { StylebindingComponent } from './stylebinding/stylebinding.component';
 import { ShoppingcartNewComponent } from './shoppingcart-new/shoppingcart-new.component';
 
+
+import { ParentOutComponent } from './parent-out/parent-out.component';
+import { ChildOutComponent } from './child-out/child-out.component';
+import { ParentInputComponent } from './parent-input/parent-input.component';
+import { ChildInputComponent } from './child-input/child-input.component';
+
+import { ProductfilterComponent } from './productfilter/productfilter.component';
+import { ProductdataComponent } from './productdata/productdata.component';
+import { ServiceLoginComponent } from './service-login/service-login.component';
+import { CaptchaService } from './captcha.service';
+import { ProductdataService } from './productdata.service';
+
+import { PipeDemoComponent } from './pipe-demo/pipe-demo.component';
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,14 +55,27 @@ import { ShoppingcartNewComponent } from './shoppingcart-new/shoppingcart-new.co
     SidemenuComponent,
     SwitchdemoComponent,
     StylebindingComponent,
-    ShoppingcartNewComponent
+    ShoppingcartNewComponent,
+   
+    ParentOutComponent,
+    ChildOutComponent,
+    ParentInputComponent,
+    ChildInputComponent,
+    
+    ProductfilterComponent,
+    
+    ProductdataComponent,
+    
+    ServiceLoginComponent,
+    
+    PipeDemoComponent
   
   ],
   imports: [
     BrowserModule,
     FormsModule
   ],
-  providers: [],
-  bootstrap: [ShoppingcartNewComponent]
+  providers: [CaptchaService,ProductdataService],
+  bootstrap: [PipeDemoComponent]
 })
 export class AppModule { }

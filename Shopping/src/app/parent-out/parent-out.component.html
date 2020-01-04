@@ -1,0 +1,8 @@
+<div class="container">
+    <h2>Parent Component</h2>
+    <label>UserName :</label>
+    <input type="text" class="form-control" [(ngModel)]="username">
+    <label>Password :</label>
+    <input type="password" class="form-control" [(ngModel)]="password">
+    <app-child-out [username]="username" [password]="password"></app-child-out>
+</div>

@@ -1,0 +1,21 @@
+<fieldset>
+    <legend>Select Category </legend>
+    <input (change)="RadioChangedOne()" [(ngModel)]="selectedCategoryValue" type="radio" name="category" value="All">All[{{AllCount}}]
+    <input (change)="RadioChangedOne()" [(ngModel)]="selectedCategoryValue" type="radio" name="category" value="Electronics">Electronics[{{ElectronicsCount}}]
+    <input (change)="RadioChangedOne()" [(ngModel)]="selectedCategoryValue" type="radio" name="category" value="Shoes">Shoes[{{ShoesCount}}]
+
+    <br>
+
+    <select (change)="RadioChangedOne()" [(ngModel)]="selectedCategoryValue" class="form-control">
+    <option value = "All">All</option>
+    <option value = "Electronics">Electronics</option>
+    <option value = "Shoes">Shoes</option>
+    </select>
+
+    
+    <input (change)="RadioChanged($event)"  type="checkbox" name="category" value="All">All[{{AllCount}}]
+    <input (change)="RadioChanged($event)" type="checkbox" name ="category" value="Electronics">Electronics[{{ElectronicsCount}}]
+    <input (change)="RadioChanged($event)"  type="checkbox" name="category" value="Shoes">Shoes[{{ShoesCount}}]
+    
+
+</fieldset>

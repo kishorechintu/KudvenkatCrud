@@ -1,0 +1,35 @@
+<div class="container">
+<h2>Products List</h2>
+<div class="form-group">
+    <app-productfilter
+        (componentChangedEvent) = "categoryChanged($event)"
+        [AllCount] = "allCount"
+        [ElectronicsCount] = "electronicsCount"
+        [ShoesCount] = "shoeCount">
+    </app-productfilter>
+</div>
+
+<div class="form-group">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Category</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <ng-container *ngFor = "let product of products" >
+                <tr *ngIf="selectedCategoryValue=='All' || selectedCategoryValue==product.Category">
+                    <td>{{product.Name}}</td>
+                    <td>{{product.Price}}</td>
+                    <td>{{product.Category}}</td>
+
+                </tr>
+
+            </ng-container>
+        </tbody>
+    </table>
+</div>
+</div>

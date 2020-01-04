@@ -1,0 +1,30 @@
+<div class="container">
+    <form #formRegister="ngForm" (submit)="submitClick(formRegister.value)">
+        <dl>
+            <dt>Name</dt>
+            <dd><input type="text" name="uname" #userName="ngModel" ngModel required/></dd>
+        
+        <dt>Email</dt>
+        <dd><input type="text" name="email" #userEmail="ngModel" ngModel required/></dd>
+        
+        <dt>city</dt>
+        <select name="listcity" #listcity="ngModel" ngModel>
+            <option>Delhi</option>
+            <option>Hyd</option>
+        </select>
+        </dl>
+        <br>
+        <button>Submit</button>
+    </form>
+    <h3>User Details</h3>
+    <dl>
+        <dt>Name</dt>
+        <dd>{{userName.value}}</dd>
+
+        <dt>Email</dt>
+        <dt>{{userEmail.value}}</dt>
+
+        <dt>City</dt>
+        <dd>{{listcity.value}}</dd>
+    </dl>
+</div>

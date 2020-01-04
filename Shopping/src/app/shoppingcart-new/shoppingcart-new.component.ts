@@ -65,7 +65,7 @@ export class ShoppingcartNewComponent  {
   }
 
   public productCard(){
-   this.product = this.productData.filter(x=>x.Name==this.selectedProduct)
+   this.product = this.productData.filter(param=>param.Name==this.selectedProduct)
   this.name = this.product[0].Name;
   this.price = this.product[0].Price;
   this.photo = this.product[0].Photo;
