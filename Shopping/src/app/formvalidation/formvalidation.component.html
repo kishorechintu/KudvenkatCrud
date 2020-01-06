@@ -1,0 +1,32 @@
+<div class="container">
+    <h2>Register</h2>
+    <form name="frmRegister" #frmRegister="ngForm" novalidate>
+        <div class="form-group">
+            <label>User Name :-</label>
+            <div class="form-group">
+                <input type="text" name="txtName" #txtName="ngModel" ngModel class="form-control" required>
+                <span *ngIf="txtName.touched && txtName.invalid" class="text-danger">Name Required</span>
+            </div>
+            
+        </div>
+
+        <div class="form-group">
+            <label>Mobile</label>
+            <div class="form-group">
+                <input type="text" name="txtMobile" #txtMobile="ngModel" ngModel pattern="\+91[0-9]{10}" class="form-control" required>
+                <div *ngIf="txtMobile.touched && txtMobile.invalid">
+                    <span *ngIf="txtMobile.errors.required" class="text-danger">Mobile Required</span>
+                    <span *ngIf="txtMobile.errors.pattern" class="text-danger">Invalid Mobile</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <button [disabled]="frmRegister.invalid" class="btn btn-success">Register</button>
+        </div>
+    </form>
+    <div class="form-group">
+        <label>Form Submitted</label>
+        {{frmRegister.submitted}}
+    </div>
+</div>

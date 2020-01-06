@@ -34,6 +34,15 @@ import { ProductdataService } from './productdata.service';
 
 import { PipeDemoComponent } from './pipe-demo/pipe-demo.component';
 import { SentenseCase } from './sentensecase.pipe';
+import { TemplateformComponent } from './templateform/templateform.component';
+import { AgePipe } from './age.pipe';
+import { FilterPipe } from './filter.pipe';
+import { TemplateformFormservicesComponent } from './templateform-formservices/templateform-formservices.component';
+import { FormvalidationComponent } from './formvalidation/formvalidation.component';
+import { SeriesComponent } from './component/series.component';
+import { ParallelComponent } from './component/parallel.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 
 
@@ -70,14 +79,23 @@ import { SentenseCase } from './sentensecase.pipe';
     ServiceLoginComponent,
     
     PipeDemoComponent,
-    SentenseCase
+    SentenseCase,
+    TemplateformComponent,
+    AgePipe,
+    FilterPipe,
+    TemplateformFormservicesComponent,
+    FormvalidationComponent,
+    SeriesComponent,
+    ParallelComponent,
+    
   
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [CaptchaService,ProductdataService],
-  bootstrap: [PipeDemoComponent]
+  bootstrap: [ParallelComponent]
 })
 export class AppModule { }

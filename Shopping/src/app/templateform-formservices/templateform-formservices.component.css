@@ -1,0 +1,10 @@
+.boxstyle{
+    width : 350px;
+    height : auto;
+    text-align :center;
+    align: center;
+
+    border :2px solid darkred;
+    margin : 20px;
+    padding :20px;
+}

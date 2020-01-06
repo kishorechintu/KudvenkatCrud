@@ -1,0 +1,43 @@
+<div class="container">
+    <h2>Form Services</h2>
+    <form name="frmRegister" #frmRegister="ngForm" novalidate>
+        <div class="form-group">
+            <label>User Name :-</label>
+        </div>
+        <div class="form-group">
+            <input type="text" name="txtName" #txtName="ngModel" ngModel class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label>Mobile :-</label>
+        </div>
+        <div class="form-group">
+            <input type="text" name="txtMobile" #txtMobile="ngModel" ngModel class="form-control" pattern="\+91[0-9]{10}" required>
+         </div>
+         <div class="form-group">
+            <button [disabled]="frmRegister.invalid" class="btn btn-primary">Submit</button>
+        </div>
+        
+    </form>
+    <div align="center">
+    <div class="boxstyle">
+        <h3>Form State Services</h3>
+        <dl>
+            <dt>Pristine - No field is Modified</dt>
+            <dd>{{frmRegister.pristine}}</dd>
+           
+            <dt>Dirty - One Or more field is Modified</dt>
+            <dd>{{frmRegister.dirty}}</dd>
+            
+            <dt>Invalid - Atleast one field is Invalid</dt>
+            <dd>{{frmRegister.invalid}}</dd>
+            
+            <dt>Valid : - All Fields are Valid</dt>
+            <dd>{{frmRegister.valid}}</dd>
+
+            <dt>Submitted :- Form is Sumbitted</dt>
+            <dd>{{frmRegister.submitted}}</dd>
+            
+        </dl>
+    </div>
+    </div>
+</div>
