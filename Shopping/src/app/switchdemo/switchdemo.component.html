@@ -1,88 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-    <style>
-    
-    </style>
-</head>
-<body>
+    <style></style>
+  </head>
+  <body>
     <div class="container">
-        <h3>Select View</h3>
-        <div class="btn-toolbar">
-            <div class="btn-group btn-lg">
-                <button (click)="showView($event.target.value)" value="info" class="btn-primary">Info</button>
-                <button (click)="showView($event.target.value)" value="summary" class="btn-danger">Summary</button>
-                <button (click)="showView($event.target.value)" value="preview" class="btn-success">Preview</button>
-
-            </div>
+      <h3>Select View</h3>
+      <div class="btn-toolbar">
+        <div class="btn-group btn-lg">
+          <button
+            (click)="showView($event.target.value)"
+            value="info"
+            class="btn-primary"
+          >
+            Info
+          </button>
+          <button
+            (click)="showView($event.target.value)"
+            value="summary"
+            class="btn-danger"
+          >
+            Summary
+          </button>
+          <button
+            (click)="showView($event.target.value)"
+            value="preview"
+            class="btn-success"
+          >
+            Preview
+          </button>
         </div>
-        <div [ngSwitch]="switchView" class="form-group" width="200">
-            <div class="bdy">
-                <div *ngSwitchCase="'info'" class="card text-center">
-                    <div class="card-header">
-                        <h3>{{product.Name}}</h3>
-                    </div>
-                    <div class="card-body">
-                        <h5>{{product.Price}}</h5>
-                    </div>
-                    <div class="card-footer">
-        
-                    </div>
-                </div>
+      </div>
+      <div [ngSwitch]="switchView" class="form-group" width="200">
+        <div class="bdy">
+          <div *ngSwitchCase="'info'" class="card text-center">
+            <div class="card-header">
+              <h3>{{ product.Name }}</h3>
             </div>
-            <div class="bdy">
-                <div *ngSwitchCase="'summary'" class="card text-center">
-                    <div class="card-header">
-                        <h3>Summary/....</h3>
-                    </div>
-                    <div class="card-body">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, eaque corrupti deserunt excepturi unde odit aperiam iusto quo modi soluta, id dignissimos. Eius, libero nostrum? Consequuntur sunt dolore quia assumenda!
-                        Optio quasi, amet sint aliquid voluptatem officiis accusantium dolor vero neque suscipit, exercitationem omnis at beatae rerum sunt ipsum, maxime praesentium natus tenetur eaque eveniet culpa nesciunt. Dicta, assumenda molestias.
-                        Corporis labore omnis consequatur vero laboriosam alias doloribus perferendis delectus excepturi cum assumenda ipsam porro aliquid magnam, laborum aperiam animi! Praesentium unde consequuntur magni esse, molestiae in nemo harum totam!
-                       </p>
-                    </div>
-                    
-                </div>
+            <div class="card-body">
+              <h5>{{ product.Price }}</h5>
             </div>
-            <div class="bdy">
-                <div *ngSwitchCase="'preview'" class="card text-center">
-                    <div class="card-header">
-                        <h3>Product Preview</h3>
-                    </div>
-                    <div class="card-body">
-                        <h5>
-                            <img [src]="product.Photo" width='200' height='100'>
-                        </h5>
-                    </div>
-                    <div class="card-footer">
-        
-                    </div>
-                </div>
-            </div>
-            
+            <div class="card-footer"></div>
+          </div>
         </div>
-
-        
-            <div class="row">
-                    <div class="col">
-                        <button (click)="previous()" class="btn-primary btn-block">Previous</button>
-
-                    </div>
-                <div class="col">
-                    <button (click)="next()" class="btn-success btn-block">Next</button>
-
-                </div>
-                
-                
+        <div class="bdy">
+          <div *ngSwitchCase="'summary'" class="card text-center">
+            <div class="card-header">
+              <h3>Summary/....</h3>
             </div>
-            
-            
-        
+            <div class="card-body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Necessitatibus, eaque corrupti deserunt excepturi unde odit
+                aperiam iusto quo modi soluta, id dignissimos. Eius, libero
+                nostrum? Consequuntur sunt dolore quia assumenda! Optio quasi,
+                amet sint aliquid voluptatem officiis accusantium dolor vero
+                neque suscipit, exercitationem omnis at beatae rerum sunt ipsum,
+                maxime praesentium natus tenetur eaque eveniet culpa nesciunt.
+                Dicta, assumenda molestias. Corporis labore omnis consequatur
+                vero laboriosam alias doloribus perferendis delectus excepturi
+                cum assumenda ipsam porro aliquid magnam, laborum aperiam animi!
+                Praesentium unde consequuntur magni esse, molestiae in nemo
+                harum totam!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="bdy">
+          <div *ngSwitchCase="'preview'" class="card text-center">
+            <div class="card-header">
+              <h3>Product Preview</h3>
+            </div>
+            <div class="card-body">
+              <h5>
+                <img [src]="product.Photo" width="200" height="100" />
+              </h5>
+            </div>
+            <div class="card-footer"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <button (click)="previous()" class="btn-primary btn-block">
+            Previous
+          </button>
+        </div>
+        <div class="col">
+          <button (click)="next()" class="btn-success btn-block">
+            Next
+          </button>
+        </div>
+      </div>
     </div>
-   
-</body>
+  </body>
 </html>

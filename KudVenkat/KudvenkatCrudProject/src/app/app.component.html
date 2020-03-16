@@ -1,0 +1,31 @@
+<div class="container" style="font-size:15px;">
+  <br />
+  <ul class="nav nav-tabs form-group">
+    <li class="nav-item">
+      <a routerLink="list">List</a>
+    </li>
+    <li class="nav-item">
+      <a routerLink="edit/0">Create</a>
+    </li>
+  </ul>
+  <div
+    *ngIf="showLoadingIndicator"
+    class="loadingio-spinner-spinner-mm7gbvidefo"
+  >
+    <div class="ldio-7gyx5c0fhxr">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <router-outlet></router-outlet>
+</div>

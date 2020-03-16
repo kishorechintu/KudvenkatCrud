@@ -1,0 +1,40 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "Kishore",
+      "gender": "Male",
+      "contactPreference": "Email",
+      "email": "Kishore.p29@gmail.com",
+      "dateOfBirth": "10/25/1993",
+      "department": "2",
+      "isActive": true,
+      "photoPath": "assets/images/emp1.png"
+    },
+    {
+      "id": 2,
+      "name": "Chitnu chinni",
+      "gender": "Female",
+      "contactPreference": "Email",
+      "email": "Chinni@gmail.com",
+      "dateOfBirth": "2020-03-19T07:11:35.000Z",
+      "department": "1",
+      "isActive": true,
+      "photoPath": "assets/images/emp2.png"
+    },
+    {
+      "id": 3,
+      "name": "Madhu mathi",
+      "gender": "Female",
+      "contactPreference": "Email",
+      "phoneNumber": null,
+      "email": "madhumathi@gmail.com",
+      "dateOfBirth": "2020-03-20T07:19:39.000Z",
+      "department": "3",
+      "isActive": true,
+      "photoPath": "assets/images/emp1.png",
+      "password": null,
+      "confirmpassword": null
+    }
+  ]
+}

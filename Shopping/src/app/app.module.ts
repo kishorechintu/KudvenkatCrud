@@ -66,18 +66,18 @@ import { HttpClientModule } from '@angular/common/http';
     SwitchdemoComponent,
     StylebindingComponent,
     ShoppingcartNewComponent,
-   
+
     ParentOutComponent,
     ChildOutComponent,
     ParentInputComponent,
     ChildInputComponent,
-    
+
     ProductfilterComponent,
-    
+
     ProductdataComponent,
-    
+
     ServiceLoginComponent,
-    
+
     PipeDemoComponent,
     SentenseCase,
     TemplateformComponent,
@@ -86,16 +86,10 @@ import { HttpClientModule } from '@angular/common/http';
     TemplateformFormservicesComponent,
     FormvalidationComponent,
     SeriesComponent,
-    ParallelComponent,
-    
-  
+    ParallelComponent
   ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    HttpClientModule
-  ],
-  providers: [CaptchaService,ProductdataService],
-  bootstrap: [ParallelComponent]
+  imports: [BrowserModule, FormsModule, HttpClientModule],
+  providers: [CaptchaService, ProductdataService],
+  bootstrap: [SwitchdemoComponent]
 })
-export class AppModule { }
+export class AppModule {}
